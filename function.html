@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p></p>
+    <button id="demo" onclick="alert(Add(12,12))">Addition</button>
+    <button id="demo1" ondblclick="alert(Sub(12,12))">Subtraction</button>
+    <script>
+        // function
+        function Add(a,b){
+            //var c =a+b;
+            return a+b;
+    
+
+        }
+
+        console.log(Add(4,3));
+        function Sub(a,b){
+            //var c =a+b;
+            return a-b;
+    
+
+        }
+
+        console.log(Sub(4,3));
+        //objects in js
+        var student = {
+            name: "Gauri",
+            id : 31009,
+            age: 24,
+            marks: 90,
+            Intro: function(){
+                console.log("hi i am a new student");
+            }
+
+
+        }
+        console.log(student.id,student.marks,student.age)
+        student.Intro();
+        //constructor function
+        function Student(name,age,marks){
+            self.name=name;
+            self.age=age;
+            self.marks=marks;
+            
+        }
+        var student1 = new Student("krish",12413977,10,100);
+        var student2 = new Student("aryan",12413977,10,56);
+        console.log(student1.name);
+
+
+
+        var n1=prompt("Enter the first number")
+        var n2=prompt("Enter the second number")
+        function Multi(){
+            return n1*n2;
+        }
+        alert(Multi(n1,n2))
+    </script>
+</body>
+</html>
